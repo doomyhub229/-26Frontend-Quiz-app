@@ -46,8 +46,8 @@ Users are able to:
 
 ### Links
 
--[Solution URL]()
--[Live Site URL:]()
+-[Solution URL](https://github.com/doomyhub229/-26Frontend-Quiz-app)
+-[Live Site URL:](https://doomyhub229.github.io/-26Frontend-Quiz-app/)
 
 ## My Process
 
