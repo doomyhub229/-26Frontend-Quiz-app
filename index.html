@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Frontend quiz app</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="theme-switcher">
+      <img src="./assets/images/icon-sun-dark.svg" alt="">
+      <button type="button" aria-pressed="false" aria-label="Dark mode">
+        <span></span>
+      </button>
+      <img src="./assets/images/icon-moon-dark.svg" alt="">
+    </div>
+  </header>
+
+  <!-- Quiz menu start -->
+
+  <main>
+    <div class="start-screen">
+      <section class="welcome">
+        <h1 tabindex="-1">Welcome to the
+          <span>Frontend Quiz!</span>
+        </h1>
+        <p>Pick a subject to get started.</p>
+      </section>
+      <section class="subjects">
+        <button class="html btn">
+          <img src="./assets/images/icon-html.svg" alt="">
+          HTML
+        </button>
+        <button class="css btn">
+          <img src="./assets/images/icon-css.svg" alt="">
+          CSS
+        </button>
+        <button class="js btn">
+          <img src="./assets/images/icon-js.svg" alt="">
+          JavaScript
+        </button>
+        <button class="accessibility btn">
+          <img src="./assets/images/icon-accessibility.svg" alt="">
+          Accessibility
+        </button>
+      </section>
+    </div>
+
+
+    <!-- Quiz menu end -->
+
+    <!-- Quiz question start -->
+
+    <div class="question-screen" hidden>
+
+      <section class="question">
+        <p class="question-info">Question 1 of 10</p>
+        <h1 class="question-title" tabindex="-1">Which tag is used to display images in HTML?</h1>
+        <div class="progress-bar" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="100"
+          aria-valuenow="0">
+          <div class="progress-fill"></div>
+        </div>    
+      </section>
+
+      <section class="answers">
+        <div class="answer-options">
+          <button class="answer-btn" type="button">
+            <span class="answer-letter">A</span>
+            <code>&lt;img&gt;</code>
+            <img class="answer-icon" src="" alt="" hidden>
+          </button>
+          <button class="answer-btn" type="button">
+            <span class="answer-letter">B</span>
+            <code>&lt;src&gt;</code>
+            <img class="answer-icon" src="" alt="" hidden>
+          </button>
+          <button class="answer-btn" type="button">
+            <span class="answer-letter">C</span>
+            <code>&lt;pic&gt;</code>
+            <img class="answer-icon" src="" alt="" hidden>
+          </button>
+          <button class="answer-btn" type="button">
+            <span class="answer-letter">D</span>
+            <code>&lt;image&gt;</code>
+            <img class="answer-icon" src="" alt="" hidden>
+          </button>
+        </div>
+        <button class="submit-btn" type="button">Submit answer</button>
+        <p class="answer-error" role="alert" hidden>
+          <img src="./assets/images/icon-incorrect.svg" alt="">
+          Please select an answer
+        </p>
+      </section>
+    </div>
+    <!-- Quiz question end -->
+    <!-- Quiz results start-->
+    <section class="results-screen" hidden>
+      <div class="results-heading">
+        <h1 tabindex="-1">Quiz completed</h1>
+        <h2>You scored...</h2>
+      </div>
+
+      <div class="results-content">
+        <div class="score-card">
+          <div class="result-subject">
+            <img class="result-icon" src="" alt="">
+            <h3 class="result-title"></h3>
+          </div>
+
+          <p class="final-score">0</p>
+
+          <p class="total-questions">out of 10</p>
+        </div>
+
+        <button class="play-again-btn" type="button">
+          Play Again
+        </button>
+      </div>
+    </section>
+    <!-- Quiz results end-->
+  </main>
+  <script src="./script.js" defer></script>
+</body>
+
+</html>
